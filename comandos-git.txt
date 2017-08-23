@@ -1,0 +1,61 @@
+COMANDOS GIT
+
+git init				// Cria um repositório.
+
+git add					// Adiciona um arquivo para a stage area.
+
+git commit				// Consolida um arquivo no repositório do git.
+
+git commit -m 'texto'	// Necessário arquivo estar na STAGED AREA -> Commita E adiciona uma ---------------------------mensagem ao commit.
+
+git commit -am 'texto'	// Necessário arquivo estar no WORKING DIRECTORY -> Adiciona o arquivo na ---------------------------STAGED AREA e COMMITA, tudo de uma vez.
+
+git commit --amend -m 'texto' // Usado quando ESQUECEMOS de adicionar um arquvio junto ao último -------------------------------- commit -> refaz alterações, OU pode somente mudar o texto caso qra
+
+git log				    // Checa o histórico de commits realizados.
+
+git log -p 				// Verifica o conteúdo de todos os commits dados até o momento.
+
+git log -p -1			// Verifica o conteúdo do último commit.
+
+git log --pretty=oneline // Verifica APENAS o hash e a mensagem que foi passada no log de TODO o --------------------------- histórico.
+
+git diff				// Verifica a diferença entre o arquivo que está no working directory e o -------------------------- arquivo que está commitado.
+
+git diff --staged 		// Verifica a diferença entre o arquivo que esta na STAGE AREA e o arquivo -------------------------- que está commitado.
+
+gitk					// Interface gráfica do git, possibilita ver em detalhes todo o histórico
+-------------------------- de logs feitos, por quem? quando? o que foi alterado? e etc.
+
+git reset HEAD <file> // Retira um arquivo da STAGED AREA e o coloca no WORKING DIRECTORY.
+
+git reset HEAD~1	  // RETIRA o ultimo(~1) arquivo commitado E volta ele para a STAGED AREA.	
+
+git reset HEAD~1 --hard // REMOVE TOTALMENTE o ultimo(~1) arquivo commitado.
+
+git checkout -- <file> // Remove as alterações feitas em arquivos que estão no seu WORKING ------------------------- DIRECTORY.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TAGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git tag				// Consulta TAGS criadas.
+
+git tag -a v1.0 -m 'Versao 1.0'		// Cria uma tag que referencia todo seu log ATUAL.
+
+git tag -a v0.0 <numHashDoLog> -m 'Versao 0.0' // Cria uma tag com referência a um LOG(HASH) ------------------------------------------------- específico.
+
+git tag show <nomeTag>				//Exibe a tag criada.
+
+git tag -d <nomeTag> // Deleta uma tag.
+
+git checkout <nomeTag> ou <nomeBranch>	// Volta o seu sistema para a versão(TAG OU BRANCH) ------------------------------------------ mencionado(a).
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BRANCH <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git branch 					// Consulta branchs existentes.
+git branch <nomeBranch>		// Cria um branch.
+git branch -d <nomeBranch>  // Deleta um branch.
+
+git checkout <nomeBranch>	// Entra em um branch
+
+git checkout -b <nomeBranch> // Cria e ENTRA no branch criado.
+
