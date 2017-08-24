@@ -2,6 +2,8 @@ COMANDOS GIT
 
 git init				// Cria um repositório.
 
+git init --bare		    // Cria um repositório para armazenamento remoto (como se fosse um -------------------------- github) só que em um servidor particular. 
+
 git add					// Adiciona um arquivo para a stage area.
 
 git commit				// Consolida um arquivo no repositório do git.
@@ -59,3 +61,27 @@ git checkout <nomeBranch>	// Entra em um branch
 
 git checkout -b <nomeBranch> // Cria e ENTRA no branch criado.
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MERGE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git merge <NomeBranchComAsAlteracoes>	// Implementa alterações feitas de um branch de teste ------------------------------------------ para o branch principal(master por exemplo.)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CLONE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git clone <url>		// Clona um repositório remoto.
+git clone <url> <alteraNomeDaPastaClonada>		// Altera o nome da pasta do projeto remoto.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> REMOTE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git remote 			// Verifica o nome do repositório remoto.(normalmente o padrão é o( ---------------------- origin) ).
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PUSH <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git push <nomeRepoRemoto> <nomeBranchASerEnviado> // Push(Envia) os dados para o Repo remoto.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PULL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+git pull <nomeRepoRemoto> <nomeBranchAReceberOsDados> // pull(Puxa) os dados do Repo remoto para o -------------------------------------------------------- branch citado no comando.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SSH <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ssh-keygen			// Gera uma chave aleatória, adicionando-a em um repositório remoto(ex: ---------------------- github) faz com que, a sua máquina tenha acesso ao repositório remoto ---------------------- via ssh.
